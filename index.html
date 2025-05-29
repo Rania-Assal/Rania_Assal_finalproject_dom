@@ -1,17 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
- 
+    <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
-    
+
+    <!-- navbar -->
+    <div class="menu_bar">
+        <div class="modal hidden">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Book a Table</h2>
+                <p>Please fill in your reservation details.</p>
+            </div>
+        </div>
+        <div class="overlay hidden"></div>
+
+        <h1 class="logo"> Yummy<span>.</span></h1>
+        <ul>
+            <li><a href="#hero" class="active">Home<br></a></li>
+            <li><a href="#about" class="">About</a></li>
+            <li><a href="#menu" class="">Menu</a></li>
+            <li><a href="#events" class="">Events</a></li>
+            <li><a href="#chefs" class="">Chefs</a></li>
+            <li><a href="#gallery" class="">Gallery</a></li>
+            <li class="dropdown"><a href="#"><span>Dropdown</span> <i
+                        class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Dropdown 1</a></li>
+                    <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="#">Deep Dropdown 1</a></li>
+                            <li><a href="#">Deep Dropdown 2</a></li>
+                            <li><a href="#">Deep Dropdown 3</a></li>
+                            <li><a href="#">Deep Dropdown 4</a></li>
+                            <li><a href="#">Deep Dropdown 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Dropdown 2</a></li>
+                    <li><a href="#">Dropdown 3</a></li>
+                    <li><a href="#">Dropdown 4</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact" class="">Contact</a></li>
+        </ul>
+        <button class="btn">book a table</button>
+    </div>
+
+
+    <!-- Home -->
+    <div class="home">
+        <div class="hp">
+            <h1>ENJOY YOUR HEALTHY DELICIOUS FOOD</h1>
+            <p> We are team of talented designers making websites with Bootstrap</p>
+            <div>
+                <button class="btn-home"> Book a Table</button>
+                <a href="https://youtu.be/Y7f98aduVJ8" class="video">
+                    <span>
+                      <i class="fa-solid fa-play"></i>Watch Video
+                    </span>
+                </a>
+            </div>
+
+        </div>
+        <div class="photo">
+            <img src="./public/images/hero-img.png" alt="">
+        </div>
+    </div>
+
+    <!-- About -->
+
+    <div class="ph">
+        <p>About us</p>
+        <h1 class="h1">Learn More <span>About Us</span></h1>
+    </div>
+
+    <div class="about">
+        <div class="imgPhoto">
+            <img class="image" src="./public/images/about.jpg" alt="">
+            <p>Book a Table <span>+1 5589 55488 55</span></p>
+
+        </div>
+
+        <div class="paragraphesAndVideo">
+            <div class="paragraphes">
+                <div class="p">
+                    <p class="italique">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua.</p>
+                    <p><i class="fa-solid fa-check" id="icone"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    <p><i class="fa-solid fa-check" id="icone"></i> Duis aute irure dolor in reprehenderit in voluptate
+                        velit.</p>
+                    <p><i class="fa-solid fa-check" id="icone"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit
+                        in
+                        voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non
+                        proident</p>
+                </div>
+
+                <div class="video">
+                    <a href="https://youtu.be/Y7f98aduVJ8" class="video-position">
+                        <img src="./public/images/about-2.jpg" alt="" width="478" class="positionVideo">
+                        <i class="fa-regular fa-circle-play positionAbs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
-  
+
+    <div class="carts">
+        <div class="cartOne">
+            <h1>Why Choose Yummy</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur quia eos.
+                Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="cart">
+            <i class="fa-solid fa-square-poll-vertical" id="fa"></i>
+            <h3>Corporis voluptates officia eiusmod</h3>
+            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+        </div>
+
+        <div class="cart">
+            <i class="fa-regular fa-gem"></i>
+            <h3>Ullamco laboris ladore lore pan</h3>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+        </div>
+
+        <div class="cart">
+            <i class="fa-solid fa-inbox" id="fa"></i>
+            <h3>Labore consequatur incidid dolore</h3>
+            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+        </div>
+    </div>
+
+
+    <div class="imgAbout">
+        <img src="./public/images/stats-bg.jpg">
+        <div class="saticfation">
+            <p class="sati">232 client</p>
+            <p class="sati">521 project</p>
+            <p class="sati">1453 Hours of Support</p>
+            <p class="sati">32 Workers</p>
+        </div>
+    </div>
+
+    <!-- Our Menu -->
+    <div class="ph">
+        <p>About us</p>
+        <h1 class="h1">Check Our <span>Check Our</span></h1>
+    </div>
+    <div class="our">
+        <ul>
+            <li><a href="#starts">Starts</a></li>
+            <li><a href="#breakfast">Breakfast</a></li>
+            <li><a href="#lunch">Lunch</a></li>
+            <li><a href="#dinner">Dinner</a></li>
+        </ul>
+
+        <div class="ph">
+            <p>Menu</p>
+            <h1 class="starters">STARTERS</h1>
+        </div>
+
+        <div class="photos-menu">
+            <div class="img">
+                <img src="./public/images/menu/menu-item-1.png" width="400" alt="">
+                <div class="info">
+                    <p>Magnam Tiste</p>
+                    <p class="gris">Lorem, deren, trataro, filede, nerada</p>
+                    <p class="orange">$5.95</p>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="./public/images/menu/menu-item-2.png" width="400" alt="">
+                <div class="info">
+                    <p>Aut Luia</p>
+                    <p class="gris">Lorem, deren, trataro, filede, nerada</p>
+                    <p class="orange">$14.95</p>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="./public/images/menu/menu-item-3.png" width="400" alt="">
+                <div class="info">
+                    <p>Est Eligendi</p>
+                    <p class="gris">Lorem, deren, trataro, filede, nerada</p>
+                    <p class="orange">$8.95</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="photos-menu">
+            <div class="img">
+                <img src="./public/images/menu/menu-item-4.png" width="400" alt="">
+                <div class="info">
+                    <p>Eos Luibusdam</p>
+                    <p class="gris">Lorem, deren, trataro, filede, nerada</p>
+                    <p class="orange">$12.95</p>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="./public/images/menu/menu-item-5.png" width="400" alt="">
+                <div class="info">
+                    <p>Eos Luibusdam</p>
+                    <p class="gris">Lorem, deren, trataro, filede, nerada</p>
+                    <p class="orange">$12.95</p>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="./public/images/menu/menu-item-6.png" width="400" alt="">
+
+                <div class="info">
+                    <p>Laboriosam Direva</p>
+                    <p class="gris">Lorem, deren, trataro, filede, nerada</p>
+                    <p class="orange">$9.95</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Tetimonial -->
+    <div class="carousel-container" id="carousel1" autoslide>
+        <div class="ph">
+            <p>TESTIMONIALS</p>
+            <h1 class="h1">What Are They <span>Saying About Us</span></h1>
+        </div>
+
+        <div class="carousel">
+            <div class="slide" targetSlide="slideCarousel1">
+                <p><span>,,</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta maiores
+                    consequuntur, obcaecati esse quasi cupiditate maxime quibusdam vel, molestias veniam! Ut maxime
+                    perferendis inventore laudantium dolor, fugit necessitatibus nisi<span>,,</span></p>
+                <p>saul godman</p>
+                <p>ceo founder</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <img class="imgtestimonial" src="./public/images/testimonials/testimonials-1.jpg" width="200" alt="">
+            </div>
+            <div class="slide" targetSlide="slideCarousel1">
+                <p><span>,,</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta maiores
+                    consequuntur, obcaecati esse quasi cupiditate maxime quibusdam vel, molestias veniam! Ut maxime
+                    perferendis inventore laudantium dolor, fugit necessitatibus nisi<span>,,</span></p>
+                <p>saul godman</p>
+                <p>ceo founder</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <img class="imgtestimonial" src="./public/images/testimonials/testimonials-2.jpg" width="200" alt="">
+            </div>
+            <div class="slide" targetSlide="slideCarousel1">
+                <p><span>,,</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta maiores
+                    consequuntur, obcaecati esse quasi cupiditate maxime quibusdam vel, molestias veniam! Ut maxime
+                    perferendis inventore laudantium dolor, fugit necessitatibus nisi<span>,,</span></p>
+                <p>saul godman</p>
+                <p>ceo founder</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <img class="imgtestimonial" src="./public/images/testimonials/testimonials-3.jpg" width="200" alt="">
+            </div>
+
+            <div class="slide" targetSlide="slideCarousel1">
+                <p><span>,,</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta maiores
+                    consequuntur, obcaecati esse quasi cupiditate maxime quibusdam vel, molestias veniam! Ut maxime
+                    perferendis inventore laudantium dolor, fugit necessitatibus nisi<span>,,</span></p>
+                <p>saul godman</p>
+                <p>ceo founder</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <img class="imgtestimonial" src="./public/images/testimonials/testimonials-4.jpg" width="200" alt="">
+            </div>
+        </div>
+        </dliv>
+
+        <!-- event -->
+        <div class="carousselevent">
+            <div class="slideevent">
+                <img src="./public/images/events-1.jpg" alt="">
+            </div>
+
+            <div class="slideevent">
+                <img src="./public/images/events-2.jpg" alt="">
+            </div>
+
+
+            <div class="slideevent">
+                <img src="./public/images/events-3.jpg" alt="">
+            </div>
+
+
+            <div class="slideevent">
+                <img src="./public/images/events-4.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- chefs -->
+        <div class="ph">
+            <p>chefs</p>
+            <h1 class="h1">Our <span>Proffesional Chefs</span></h1>
+        </div>
+
+        <div class="chefs">
+            <div class="Walter">
+                <img src="./public/images/chefs/chefs-1.jpg" alt="">
+                <h2>Walter White</h2>
+                <p>Master Chef</p>
+                <p>
+                    Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum
+                    exercitationem iure minima enim corporis et voluptate.
+                </p>
+            </div>
+
+            <div class="Sarah ">
+                <img src="./public/images/chefs/chefs-2.jpg" alt="">
+                <h2>Walter White</h2>
+                <p>Patissier</p>
+                <p>
+                    Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis.
+                    Voluptate sed quas reiciendis animi neque sapiente.
+                </p>
+            </div>
+
+            <div class="William">
+                <img src="./public/images/chefs/chefs-3.jpg" alt="">
+                <h2>Walter White</h2>
+                <p>Cook</p>
+                <p>
+                    Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut
+                    architecto porro aspernatur molestiae modi.
+                </p>
+            </div>
+
+        </div>
+
+        <script src="./public/js/app.js"></script>
 </body>
+
 </html>
